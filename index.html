@@ -1,1 +1,110 @@
 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Aplicación de lista de tareas desarrollada con HTML, CSS y JavaScript."
+    >
+
+    <title>Mis tareas | To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="todo-container">
+
+            <header class="todo-header">
+
+                <p class="eyebrow">
+                    ORGANIZACIÓN PERSONAL
+                </p>
+
+                <h1>
+                    Mis tareas
+                </h1>
+
+                <p class="subtitle">
+                    Organizá tu día, una tarea a la vez.
+                </p>
+
+            </header>
+
+
+            <form class="todo-form" id="todo-form">
+
+                <input
+                    type="text"
+                    id="todo-input"
+                    placeholder="¿Qué tenés que hacer?"
+                    autocomplete="off"
+                >
+
+                <button type="submit">
+                    Agregar
+                </button>
+
+            </form>
+
+
+            <div class="todo-info">
+
+                <span id="task-counter">
+                    0 tareas pendientes
+                </span>
+
+                <button
+                    type="button"
+                    id="clear-completed"
+                >
+                    Limpiar completadas
+                </button>
+
+            </div>
+
+
+            <ul
+                class="todo-list"
+                id="todo-list"
+            >
+                <!-- Las tareas se agregarán mediante JavaScript -->
+            </ul>
+
+
+            <div
+                class="empty-state"
+                id="empty-state"
+            >
+
+                <span class="empty-icon">
+                    ✓
+                </span>
+
+                <p>
+                    No tenés tareas pendientes.
+                </p>
+
+                <span>
+                    ¡Disfrutá el momento!
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
